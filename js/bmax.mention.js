@@ -1,4 +1,4 @@
-angular.module('bMaxMention', []).controller('MentionCtrl', ($scope, $http, $q) => {
+angular.module('bMaxMention', ['ngTouch']).controller('MentionCtrl', ($scope, $http, $q) => {
     $scope.isMention = false;
     $scope.elements = [{}, {}];
     $scope.listElements;
