@@ -6,7 +6,9 @@ angular.module('bMaxMention', []).controller('MentionCtrl', ($scope, $http, $q) 
     const bMaxMentionMenu = $('.bMaxMentionMenu');
     var position = 0;
 
-
+$('.mention').on('input',function(){
+    alert("testing");
+});
     $scope.bMaxMention = (event) => {
         $scope.currentTarget = $(event.currentTarget)[0]
         if (event.which == 50) {
