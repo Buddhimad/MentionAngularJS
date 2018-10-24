@@ -1,0 +1,50 @@
+.bMaxMentionMenu{
+    display: none;
+	position: absolute;
+    position: absolute;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    background-clip: padding-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.bMaxMentionMenu>ul{
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    /* padding-inline-start: 40px; */
+}
+
+.bMaxMentionMenu ul li{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.bMaxMentionMenu ul li:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #428bca;
+}
+#signature{
+    float: right;
+}

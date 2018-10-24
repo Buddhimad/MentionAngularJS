@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Mention For Dynamic Elements</title>
+    <link rel="stylesheet" type="text/css" href="./asset/_css/bmax.mention.css">
+    <link rel="stylesheet" type="text/css" href="./asset/_css/bootstrap.min.css">
+</head>
+
+<body>
+    <div ng-app="bMaxMention" ng-controller="MentionCtrl" class="container">
+            <h1>@ Mention For Dynamically Generated Elements</h1>
+            <h3>Angular JS</h3>
+            <div ng-repeat="element in elements">
+                <textarea class="form-control" rows="10" placeholder="type @ " ng-keyup="bMaxMention($event)"></textarea><br />
+            </div>
+            <div class="bMaxMentionMenu">
+                <ul>
+                    <li ng-repeat='listElement in listElements' ng-click="bMaxMentionSelect($event)">{{listElement.first_name}}</li>
+                </ul>
+            </div>
+            <p id="signature"><b>Created by b.V.d</b></p>
+        </div>
+    <script src="./asset/_js/jquery.min.js"></script>
+    <script src="./asset/_js/bootstrap.min.js"></script>
+    <script src="./asset/_js/angular.min.js"></script>
+    <script src="./asset/_js/jquery.caret.js"></script>
+    <script src="./asset/_js/bmax.mention.js"></script>
+</body>
+
+</html>
